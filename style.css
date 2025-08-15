@@ -6,8 +6,8 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-  color: #fff;
-  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #fefce8; /* och oq-sariq */
+  background: #0d0d0d; /* qora fon */
   line-height: 1.6;
 }
 
@@ -17,16 +17,16 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.2rem 5%;
-  background: rgba(15, 23, 42, 0.8);
-  position: sticky;
-  top: 0;
+  background: rgba(13, 13, 13, 0.95);
   backdrop-filter: blur(10px);
   z-index: 1000;
+  position: sticky;
+  top: 0;
 }
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #6366f1;
+  color: #fbbf24; /* oltin */
 }
 .nav-links {
   display: flex;
@@ -37,11 +37,11 @@ body {
 }
 .nav-links a {
   text-decoration: none;
-  color: #fff;
+  color: #fefce8;
   transition: color 0.3s ease;
 }
 .nav-links a:hover {
-  color: #ec4899;
+  color: #d97706; /* bronza */
 }
 
 /* ===== Hero Section ===== */
@@ -57,44 +57,43 @@ body {
   font-size: 3rem;
 }
 .hero h1 span {
-  background: linear-gradient(90deg, #6366f1, #ec4899);
+  background: linear-gradient(90deg, #fbbf24, #d97706);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .hero h2 {
   font-size: 1.5rem;
   margin: 1rem 0;
-  color: #94a3b8;
+  color: #fcd34d; /* yumshoq oltin */
 }
 .hero p {
   max-width: 500px;
   margin: 0 auto 1.5rem;
-  color: #cbd5e1;
+  color: #fde68a; /* och oltin */
 }
 .btn {
   display: inline-block;
   padding: 0.7rem 1.5rem;
-  background: linear-gradient(90deg, #6366f1, #ec4899);
-  color: #fff;
+  background: linear-gradient(90deg, #fbbf24, #d97706);
+  color: #0d0d0d;
   border-radius: 30px;
   text-decoration: none;
-  transition: transform 0.3s ease;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(251, 191, 36, 0.3);
 }
 .btn:hover {
   transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(217, 119, 6, 0.4);
 }
 
-/* ===== About ===== */
-.about {
+/* ===== Sections ===== */
+section {
   padding: 4rem 5%;
   text-align: center;
 }
 
 /* ===== Skills ===== */
-.skills {
-  padding: 4rem 5%;
-  text-align: center;
-}
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -105,18 +104,18 @@ body {
   background: rgba(255, 255, 255, 0.05);
   padding: 1rem;
   border-radius: 10px;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
 }
 .skill-card:hover {
   transform: translateY(-5px);
-  background: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(
+    90deg,
+    rgba(251, 191, 36, 0.2),
+    rgba(217, 119, 6, 0.2)
+  );
 }
 
 /* ===== Projects ===== */
-.projects {
-  padding: 4rem 5%;
-  text-align: center;
-}
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -141,15 +140,11 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: rgba(15, 23, 42, 0.8);
+  background: rgba(13, 13, 13, 0.85);
   padding: 1rem;
 }
 
 /* ===== Contact ===== */
-.contact {
-  padding: 4rem 5%;
-  text-align: center;
-}
 form {
   max-width: 500px;
   margin: auto;
@@ -161,10 +156,13 @@ textarea {
   margin-bottom: 1rem;
   border: none;
   border-radius: 8px;
+  background: #1a1a1a;
+  color: #fefce8;
 }
 button {
-  background: linear-gradient(90deg, #6366f1, #ec4899);
-  color: white;
+  background: linear-gradient(90deg, #fbbf24, #d97706);
+  color: #0d0d0d;
+  font-weight: bold;
   border: none;
   padding: 0.8rem 1.5rem;
   border-radius: 30px;
@@ -178,33 +176,21 @@ button:hover {
 footer {
   text-align: center;
   padding: 1rem;
-  background: rgba(15, 23, 42, 0.8);
+  background: rgba(13, 13, 13, 0.95);
   font-size: 0.9rem;
-  color: #94a3b8;
-}
-
-/* ===== Typing Cursor ===== */
-.cursor {
-  display: inline-block;
-  margin-left: 2px;
-  animation: blink 1s step-end infinite;
-  opacity: 1;
-}
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
-}
-
-/* (ixtiyoriy) typed matnni biroz ajratish uchun */
-#typed {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.5px;
+  color: #fcd34d;
 }
 
 /* ===== Responsive ===== */
+.menu-btn {
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: none;
+}
 @media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
   .nav-links {
     display: none;
   }
