@@ -7,7 +7,7 @@
 body {
   font-family: "Poppins", sans-serif;
   color: #fefce8; /* och oq-sariq */
-  background: #0d0d0d; /* qora fon */
+  background: #010235; /* qora fon */
   line-height: 1.6;
 }
 
@@ -17,7 +17,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.2rem 5%;
-  background: rgba(13, 13, 13, 0.95);
+  background: #020346;
   backdrop-filter: blur(10px);
   z-index: 1000;
   position: sticky;
@@ -47,48 +47,48 @@ body {
 /* ===== Hero Section ===== */
 .hero {
   display: flex;
-  background: url("fon.png") no-repeat center center/cover;
   align-items: center;
-  justify-content: center;
-  height: 90vh;
-  text-align: center;
-  padding: 2rem;
-}
-.hero h1 {
-  font-size: 3rem;
-}
-.hero h1 span {
-  background: linear-gradient(90deg, #fbbf24, #d97706);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.hero h2 {
-  font-size: 1.5rem;
-  margin: 1rem 0;
-  color: #fcd34d; /* yumshoq oltin */
-}
-.hero p {
-  max-width: 500px;
-  margin: 0 auto 1.5rem;
-  color: #fde68a; /* och oltin */
-}
-.btn {
-  display: inline-block;
-  padding: 0.7rem 1.5rem;
-  background: linear-gradient(90deg, #fbbf24, #d97706);
-  color: #0d0d0d;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(251, 191, 36, 0.3);
-}
-.btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 20px rgba(217, 119, 6, 0.4);
+  justify-content: flex-start; /* Chapga joylash */
+  height: 100vh;
+  background: url("fon.png") no-repeat center center/cover;
+  padding-left: 80px; /* Chapdan bo‘sh joy */
 }
 
+.hero-text {
+  max-width: 500px;
+  color: white;
+  text-align: left;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.hero-text .name {
+  color: #ff9800; /* Ism rangini o‘zgartirish */
+}
+
+.hero-text h3 {
+  font-size: 20px;
+  margin-top: 15px;
+  line-height: 1.5;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: #ff9800;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #e68900;
+}
 /* ===== Sections ===== */
 section {
   padding: 4rem 5%;
@@ -97,7 +97,7 @@ section {
 
 .skills {
   padding: 4rem 2rem;
-  background-color: #0d0d0d;
+  background-color: #020346;
   color: #fefce8;
   text-align: center;
 }
@@ -132,7 +132,7 @@ section {
 
 .skill-card:hover {
   background: linear-gradient(90deg, #fbbf24, #d97706);
-  color: #0d0d0d;
+  color: #020346;
   transform: translateY(-5px) scale(1.05);
   box-shadow: 0 0 20px rgba(251, 191, 36, 0.6);
   cursor: pointer;
@@ -141,7 +141,7 @@ section {
 /* ===== Projects ===== */
 .projects {
   padding: 4rem 2rem;
-  background-color: #0d0d0d;
+  background-color: #020346;
   color: #fefce8;
   text-align: center;
 }
@@ -190,7 +190,7 @@ section {
     rgba(251, 191, 36, 0.9),
     rgba(217, 119, 6, 0.9)
   );
-  color: #0d0d0d;
+  color: #020346;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -221,7 +221,7 @@ section {
   display: inline-block;
   margin-top: 10px;
   padding: 8px 15px;
-  background: #ff8a00;
+  background: #020346;
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -230,7 +230,7 @@ section {
 }
 
 .code-btn:hover {
-  background: #e67600;
+  background: #383bcc;
 }
 /* ===== Contact ===== */
 form {
@@ -249,7 +249,7 @@ textarea {
 }
 button {
   background: linear-gradient(90deg, #fbbf24, #d97706);
-  color: #0d0d0d;
+  color: #020346;
   font-weight: bold;
   border: none;
   padding: 0.8rem 1.5rem;
@@ -264,7 +264,7 @@ button:hover {
 footer {
   text-align: center;
   padding: 1rem;
-  background: rgba(13, 13, 13, 0.95);
+  background: #020346;
   font-size: 0.9rem;
   color: #fcd34d;
 }

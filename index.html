@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Komronbek | Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
   <body>
     <!-- ===== Navbar ===== -->
@@ -24,9 +25,8 @@
     <!-- ===== Hero Section ===== -->
     <section id="home" class="hero">
       <div class="hero-text">
-        <h1>
-          Hello, I'm <span id="typed"></span><span class="cursor">|</span>
-        </h1>
+        <h1>Hello, I'm</h1>
+        <h1 class="name" id="typed"></h1>
         <h3>
           I build fast, secure and scalable web applications and telegram bots
         </h3>
@@ -69,7 +69,7 @@
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card"> 
           <img src="image.png" alt="Project 2" />
           <div class="project-overlay">
             <h3>My blog site</h3>
@@ -143,6 +143,7 @@
       <form>
         <input type="text" placeholder="Your Name" required />
         <input type="email" placeholder="Your Email" required />
+        <input type="text" placeholder="Your telegram username" required />
         <textarea placeholder="Your Message" required></textarea>
         <button type="submit">Send</button>
       </form>
