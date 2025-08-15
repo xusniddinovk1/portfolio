@@ -366,7 +366,7 @@ section {
 
 .contact-form input,
 .contact-form textarea {
-  width: 100%;
+  width: 80%;
   padding: 15px;
   border-radius: 8px;
   border: 1px solid #ddd;
@@ -387,7 +387,7 @@ section {
 }
 
 .contact-form .btn {
-  background: #4e73df;
+  background: #061f68;
   color: white;
   padding: 15px 20px;
   border-radius: 8px;
