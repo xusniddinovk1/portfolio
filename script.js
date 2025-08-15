@@ -65,7 +65,7 @@ sections.forEach((section) => {
 // ===== Typewriter Effect (Komronbek <-> Developer) =====
 (function () {
   const el = document.getElementById("typed");
-  const words = ["Komronbek", "Developer"];
+  const words = ["Komronbek", "Backend Developer"];
   const typeSpeed = 100; // harf yozish tezligi (ms)
   const deleteSpeed = 60; // harf o‘chirish tezligi (ms)
   const holdAfterType = 1200; // so‘z bitgach kutish (ms)
