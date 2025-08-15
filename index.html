@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Komronbek | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===== Navbar ===== -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">Komronbek</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ===== Hero Section ===== -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <h1>Hello, I'm <span id="typed"></span><span class="cursor">|</span></h1>
+        <h2>Backend Developer</h2>
+        <p>I build fast, secure and scalable web applications.</p>
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
+    </section>
+
+    <!-- ===== About Section ===== -->
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate backend developer with expertise in Python, Django,
+        DRF, and modern web technologies.
+      </p>
+    </section>
+
+    <!-- ===== Skills Section ===== -->
+    <section id="skills" class="skills">
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Python</div>
+        <div class="skill-card">Django</div>
+        <div class="skill-card">PostgreSQL</div>
+      </div>
+    </section>
+
+    <!-- ===== Projects Section ===== -->
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="project1.jpg" alt="Project 1" />
+          <div class="project-info">
+            <h3>Bookstore</h3>
+            <p>Django + DRF + PostgreSQL</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="project2.jpg" alt="Project 2" />
+          <div class="project-info">
+            <h3>Task Manager</h3>
+            <p>Python + Django + JWT</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact Section ===== -->
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+      <p>© 2025 Komronbek. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
