@@ -6,13 +6,13 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-  color: #fefce8; /* och oq-sariq */
-  background: #020346; /* qora fon */
+  color: #fefce8;
+  background: #020346;
   line-height: 1.6;
 }
 
 /* ===== Navbar ===== */
-.navbar {
+/* .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,7 +26,7 @@ body {
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #ffffff; /* oltin */
+  color: #ffffff;
 }
 .nav-links {
   display: flex;
@@ -41,17 +41,65 @@ body {
   transition: color 0.3s ease;
 }
 .nav-links a:hover {
-  color: #1122b8; /* bronza */
+  color: #1122b8;
+} */
+
+
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 5%;
+  background: #020346;
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fefce8;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #1122b8;
+}
+
+/* ===== Menu button (mobile) ===== */
+.menu-btn {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #fff;
 }
 
 /* ===== Hero Section ===== */
 .hero {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Chapga joylash */
+  justify-content: flex-start;
   height: 100vh;
   background: url("fon.png") no-repeat center center/cover;
-  padding-left: 80px; /* Chapdan bo‘sh joy */
+  padding-left: 80px;
 }
 
 .hero-text {
@@ -66,7 +114,7 @@ body {
 }
 
 .hero-text .name {
-  color: #c50d0d; /* Ism rangini o‘zgartirish */
+  color: #c50d0d;
 }
 
 .hero-text h3 {
@@ -89,18 +137,16 @@ body {
 .btn:hover {
   background: #1122b8;
 }
+
 /* ===== Sections ===== */
 section {
-  padding: 4rem 5%;
-  text-align: 100px;
-  background: #020346;
-  margin-bottom: 20px;
+  padding: 60px 0; /* faqat tepa-past masofa */
 }
+
+/* ===== About ===== */
 .about {
   background-color: #020346;
   color: #f5f5f5;
-  padding: 60px 20px 30px;
-  font-family: "Poppins", sans-serif;
 }
 
 .about-container {
@@ -110,7 +156,8 @@ section {
   gap: 40px;
   max-width: 1100px;
   margin: 0 auto;
-  flex-wrap: wrap; /* Responsive bo‘lishi uchun */
+  flex-wrap: wrap;
+  padding: 0 20px; /* chap-o'ng masofa */
 }
 
 .about-text {
@@ -119,8 +166,8 @@ section {
 
 .about-text h2 {
   font-size: 2rem;
-  color: #ffffff;
   margin-bottom: 20px;
+  text-align: center; /* markazda */
 }
 
 .about-text p {
@@ -139,20 +186,22 @@ section {
   width: 250px;
   height: 250px;
   object-fit: cover;
-  border-radius: 50%; /* Dumaloq shakl */
-  border: 4px solid #00d4ff; /* Rangli ramka */
+  border-radius: 50%;
+  border: 4px solid #00d4ff;
   box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
 }
+
+/* ===== Skills ===== */
 .skills {
-  padding: 30px 20px  ;
   background-color: #020346;
   color: #fefce8;
   text-align: center;
+  padding-bottom: 30px;
 }
 
 .skills h2 {
   font-size: 2.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 40px;
   background: #ffffff;
   background-clip: text;
   -webkit-background-clip: text;
@@ -162,9 +211,10 @@ section {
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1.5rem;
-  max-width: 900px;
+  gap: 20px;
+  max-width: 1100px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .skill-card {
@@ -192,15 +242,16 @@ section {
 
 /* ===== Projects ===== */
 .projects {
-  padding: 4rem 2rem;
   background-color: #020346;
   color: #fefce8;
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 .projects h2 {
   font-size: 2.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 40px;
   background: #ffffff;
   background-clip: text;
   -webkit-background-clip: text;
@@ -209,10 +260,11 @@ section {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr)); /* Har qatorda 3 ta */
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
   max-width: 1100px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .project-card {
@@ -284,6 +336,71 @@ section {
 .code-btn:hover {
   background: #1122b8;
 }
+
+/* ===== Contact ===== */
+.contact {
+  background: #020346;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  margin-bottom: 30px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #4e73df;
+  box-shadow: 0 0 8px rgba(78, 115, 223, 0.3);
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 150px;
+}
+
+.contact-form .btn {
+  background: #4e73df;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.contact-form .btn:hover {
+  background: #3b5cc4;
+}
+
 /* ===== Footer ===== */
 footer {
   text-align: center;
@@ -294,16 +411,66 @@ footer {
 }
 
 /* ===== Responsive ===== */
-.menu-btn {
-  font-size: 1.8rem;
-  cursor: pointer;
-  display: none;
+@media (max-width: 1024px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-image {
+    margin-top: 20px;
+  }
+  .projects-grid,
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 }
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .hero {
+    padding-left: 20px;
+  }
+  .hero-text h1 {
+    font-size: 36px;
+  }
+  .hero-text h3 {
+    font-size: 18px;
+  }
+}
+/* ===== Responsive ===== */
 @media (max-width: 768px) {
   .menu-btn {
     display: block;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fff;
+    z-index: 1001; /* hamburger tugma yuqori bo‘lsin */
   }
+
   .nav-links {
-    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 220px;
+    background-color: #020346;
+    display: flex; /* muhim! */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1000; /* menyu hamburger ostida bo‘lmasin */
+  }
+
+  .nav-links.active {
+    transform: translateX(0);
+  }
+
+  .nav-links li {
+    margin: 0;
   }
 }

@@ -20,27 +20,12 @@ window.addEventListener("scroll", () => {
 });
 
 // ===== Mobile Menu Toggle =====
+const menuBtn = document.querySelector(".menu-btn");
 const navLinks = document.querySelector(".nav-links");
 
-if (window.innerWidth <= 768) {
-  // faqat mobil holatda
-  const menuBtn = document.createElement("div");
-  menuBtn.classList.add("menu-btn");
-  menuBtn.innerHTML = "☰";
-  navbar.insertBefore(menuBtn, navLinks);
-
-  menuBtn.addEventListener("click", () => {
-    navLinks.style.display =
-      navLinks.style.display === "flex" ? "none" : "flex";
-    navLinks.style.flexDirection = "column";
-    navLinks.style.position = "absolute";
-    navLinks.style.top = "60px";
-    navLinks.style.right = "20px";
-    navLinks.style.background = "rgba(15, 23, 42, 0.9)";
-    navLinks.style.padding = "1rem";
-    navLinks.style.borderRadius = "10px";
-  });
-}
+menuBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
 // ===== Scroll Animation for Sections =====
 const sections = document.querySelectorAll("section");
 const revealSection = () => {
