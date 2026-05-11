@@ -247,7 +247,7 @@ body {
 .hero-img-bg {
   width: 360px;
   height: 420px;
-  border-radius: 50% 50% 48% 52% / 60% 60% 40% 40%;
+  border-radius: 50%;
   background: linear-gradient(160deg, #dbd5ff 0%, #c8b8ff 100%);
   position: relative;
   overflow: hidden;
@@ -272,13 +272,6 @@ body {
   font-size: 0.8rem;
   font-weight: 600;
   white-space: nowrap;
-}
-.hero-card .dot {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: #22c55e;
-  flex-shrink: 0;
 }
 .hero-stat {
   position: absolute;
