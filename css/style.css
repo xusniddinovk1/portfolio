@@ -32,7 +32,7 @@ body {
 }
 
 /* NAV */
-nav {
+#mainNav {
   position: fixed;
   top: 0;
   left: 0;
@@ -50,7 +50,7 @@ nav {
   transition: all 0.3s ease;
 }
 
-nav.scrolled {
+#mainNav.scrolled {
   background: rgba(255, 255, 255, 0.95);
   height: 68px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
@@ -1249,7 +1249,7 @@ footer {
   .nav-burger {
     display: flex;
   }
-  nav.open .nav-links {
+  #mainNav.open .nav-links {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -1261,7 +1261,7 @@ footer {
     border-bottom: 1px solid var(--border);
     gap: 1.1rem;
   }
-  nav.open .nav-cta {
+  #mainNav.open .nav-cta {
     display: inline-block;
     margin: 0 6% 1.5rem;
   }
